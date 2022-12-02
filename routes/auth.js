@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const {User} = require("../models/user")
 const Joi = require("joi");
+const bcrypt = require("bcrypt");
 const { valid } = require("joi");
 
 router.post("/", async (req, res) => {
@@ -19,12 +20,14 @@ router.post("/", async (req, res) => {
             req.body.password, user.password
         )
         if (!validPassword)
-            return res.status(401).send({message: "Invalid Email or Password"})
+            return res.status(401).send({message: "Invalid Email or Password, probably password"})
 
         const token = user.generateAuthToken();
         res.status(200).send({data: token, message: "Logged in successfully"})
     } catch (error) {
+        console.log(error)
         res.status(500).send({message: "Internal Server Error"})
+        
     }
 })
 

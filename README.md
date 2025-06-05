@@ -1,4 +1,1 @@
 # KMP-Backend
-
-secret= automation1234578
-secret= AOZqICapXimtdlAFDBDlL6rFT36eCsy2LFM0rOimazNNul2N1w9hJQQJ99BFACAAAAA6hax1AAASAZDO3Oie

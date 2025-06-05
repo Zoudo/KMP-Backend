@@ -6,7 +6,7 @@ const config = {
   environment: "development",
   
   // 🚨 log sources
-  secret: "automation12345",
+  secret: "ICapXimtdlAFDBDlL6rFT36eCsy2LFM0rOimazNNul2N1w9hJQQJ99BFACAAAAA6hax1AAASAZDO3Oie",
 
   retries: 3,
   timeout: 5000,

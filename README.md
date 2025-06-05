@@ -1,3 +1,3 @@
 # KMP-Backend
 
-secret= automation12345
+secret= automation1234578
